@@ -1,1 +1,1 @@
-# dio-trilha-java-basico
+# Todos projetos da trilha java basico da DIO.
