@@ -16,9 +16,9 @@ public class Contador {
         }
     }
     static void contar(int init, int end) throws ParametrosInvalidosException{
-        if(init > end) throw new ParametrosInvalidosException();
-        int contagem = end - init;
-        for(int i = 1; i <= contagem; i++){
+        //if(init > end) throw new ParametrosInvalidosException();
+        int contagem = end - int;
+        for(int i = 0; i <= contagem; i++){
             System.out.println("Imprimindo o número "+i);
         }
     }

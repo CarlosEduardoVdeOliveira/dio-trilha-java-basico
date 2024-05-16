@@ -10,15 +10,15 @@ public class Contador {
         int endForLoop = scanner.nextInt();
 
         try {
-            contar(initForLoop, endForLoop);
+            System.out.println(contar(initForLoop, endForLoop));
         } catch (ParametrosInvalidosException e) {
             System.out.println("O segundo parâmetro deve ser maior que o primeiro.");
         }
     }
     static void contar(int init, int end) throws ParametrosInvalidosException{
-        if(init > end) throw new ParametrosInvalidosException();
-        int contagem = end - init;
-        for(int i = 1; i <= contagem; i++){
+        //if(init > end) throw new ParametrosInvalidosException();
+        int contagem = init - end;
+        for(int i = 0; i <= contagem; i++){
             System.out.println("Imprimindo o número "+i);
         }
     }

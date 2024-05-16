@@ -8,17 +8,16 @@ public class Contador {
         int initForLoop = scanner.nextInt();
         System.out.println("Digite o fim do forloop");
         int endForLoop = scanner.nextInt();
-
         try {
             contar(initForLoop, endForLoop);
         } catch (ParametrosInvalidosException e) {
             System.out.println("O segundo parâmetro deve ser maior que o primeiro.");
         }
     }
-    static void contar(int init, int end) throws ParametrosInvalidosException{
-        if(init > end) throw new ParametrosInvalidosException();
-        int contagem = end - init;
-        for(int i = 1; i <= contagem; i++){
+    static void contar(int initForLoop, int endForLoop) throws ParametrosInvalidosException{
+        if(initForLoop > endForLoop) throw new ParametrosInvalidosException();
+        int contagem = initForLoop - endForLoop;
+        for(int i = initForLoop; i < contagem; i++){
             System.out.println("Imprimindo o número "+i);
         }
     }
