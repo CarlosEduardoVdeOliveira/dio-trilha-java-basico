@@ -1,3 +1,4 @@
+
 import iphone.Iphone;
 import iphone.apps.internet.Internet;
 import iphone.apps.internet.Safari;
@@ -10,7 +11,6 @@ public class Iphone15 {
     String numero = "33999635953";
 
     Iphone iphone15 = new Iphone();
-
     Internet internet = iphone15;
     Telefone telefone = iphone15;
     ReprodutorDeMusicas reproduzirMusicas = iphone15;
@@ -20,9 +20,9 @@ public class Iphone15 {
     safari.abrirNovaPagina();
     
 
-    telefone.ligar(numero);
+    iphone15.ligar(numero);
     iphone15.tocarMusica(musica);
-    internet.abrirNovaPagina();
+    iphone15.abrirNovaPagina();
     reproduzirMusicas.tocarMusica(musica);
   }
 }
