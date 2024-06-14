@@ -16,5 +16,5 @@ public class Chrome implements Internet {
   @Override
   public void atualizarPagina() {
     System.out.println("ATUALIZANDO PAGINA WEB NO CHROME...");
-  }  
+  }
 }
