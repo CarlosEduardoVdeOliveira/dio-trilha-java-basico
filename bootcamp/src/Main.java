@@ -13,20 +13,31 @@ public class Main {
         cursoReact.setDescricao("Descrição do curso de Reactjs.");
         cursoReact.setCargaHoraria(150);
 
+        Mentoria mentoriaReact = new Mentoria();
+        mentoriaReact.setTitulo("Mentoria do curso JS");
+        mentoriaReact.setDescricao("Descrição da mentoria do curso JS.");
+        mentoriaReact.setData(LocalDate.now());
+
         Curso cursoJava = new Curso();
         cursoJava.setTitulo("Curso de javascript");
         cursoJava.setDescricao("Descrição do curso de javascript.");
         cursoJava.setCargaHoraria(120);
 
-        Mentoria mentoriaReact = new Mentoria();
-        mentoriaReact.setTitulo("Mentoria do curso JS");
-        mentoriaReact.setDescricao("Descrição da mentoria do curso JS.");
-        mentoriaReact.setData(LocalDate.now(ZoneId.of("America/Sao_Paulo")));
 
         Mentoria mentoriaJava = new Mentoria();
         mentoriaJava.setTitulo("Mentoria do curso Java");
         mentoriaJava.setDescricao("Descrição da mentoria do curso Java.");
-        mentoriaJava.setData(LocalDate.now(ZoneId.of("America/Sao_Paulo")));
+        mentoriaJava.setData(LocalDate.now());
+
+        Curso cursoBancoDeDados = new Curso();
+        cursoBancoDeDados.setTitulo("Curso de Reactjs");
+        cursoBancoDeDados.setDescricao("Descrição do curso de Reactjs.");
+        cursoBancoDeDados.setCargaHoraria(150);
+
+        Mentoria mentoriaBancoDeDados = new Mentoria();
+        mentoriaBancoDeDados.setTitulo("Mentoria do curso JS");
+        mentoriaBancoDeDados.setDescricao("Descrição da mentoria do curso JS.");
+        mentoriaBancoDeDados.setData(LocalDate.now());
 
         Bootcamp fullStack = new Bootcamp();
         fullStack.setNome("Bootcamp Full Stack developer.");
@@ -36,6 +47,8 @@ public class Main {
         fullStack.getConteudos().add(mentoriaReact);
         fullStack.getConteudos().add(cursoJava);
         fullStack.getConteudos().add(mentoriaJava);
+        fullStack.getConteudos().add(cursoBancoDeDados);
+        fullStack.getConteudos().add(mentoriaBancoDeDados);
 
         Dev devCarlos = new Dev();
         devCarlos.setNome("Carlos Eduardo");
